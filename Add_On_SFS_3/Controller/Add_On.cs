@@ -135,6 +135,10 @@ namespace Add_On_SFS_3.Controller
                     {
                         EnviaEmail();
                     }
+                    else
+                    {
+                        SBO_Application.MessageBox("[Crear] ó [Actualizar] documento antes de enviar a sunat");
+                    }
                 }
             }
         }
