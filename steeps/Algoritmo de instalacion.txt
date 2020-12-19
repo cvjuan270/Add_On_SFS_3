@@ -17,3 +17,4 @@
  2.1	copiar firma digital y validar
 3	crar .js para correr facturador y abrir bandeja de facturador al iniciar windows
 	
+4	salir a comer con Michelle
