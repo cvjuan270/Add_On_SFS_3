@@ -1,0 +1,19 @@
+**************---------instalacion de Add_on----------***********
+
+1	Crear tabla definida por el usuario "TIPNOCR"->Ningun objeto
+2	crear Campos definidos por el usuario segun captura 2
+		ResponseCode	Alfanumérico (3)
+		Description	Alfanumérico (50)
+		TipNotCre	Alfanumérico (10)	TIPNOCR
+3	Actualizar storeprocedure <PostTransactionNotice> para generar folinim en automatico y cambiar el status a doc impreso
+ 3.1	Ejecutar Query de storeprocecures de \Sql\SQLQuery1.sql
+4	instalar add_on
+5	Copiar las librerias al path de instalacion
+6	Cambiar las rutas a los usuarios fuera de servidor
+
+**************---------Instalacion SFS----------***********
+1	Instalar Java
+2	crear D:\SFS_v1.3.2
+ 2.1	copiar firma digital y validar
+3	crar .js para correr facturador y abrir bandeja de facturador al iniciar windows
+	
