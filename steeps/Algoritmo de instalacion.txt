@@ -16,4 +16,36 @@
 2	crear D:\SFS_v1.3.2
  2.1	copiar firma digital y validar
 3	crar .js para correr facturador y abrir bandeja de facturador al iniciar windows
-	
+
+
+**************---------Instalacion SFS----------***********
+
+1	Compilar (x86)
+2	ubicar /bin/x86/debug
+3	crear nuevo proyecto vs 2005 -SAPB1AddOnInstaller.net Wizard
+3.1		Nombramos el proyecto
+3.2		Lenamos datos de la aplicacion
+3.3		Ubicamos el .exe del paso 2
+		Ubicamos el dll InteropSAPUI.dll
+		Ubicamos el dll InteropSAPOI.dll
+4	Cambiamos a arquitecturs X86 y compilamos
+4.1		Ubicamos el bin/x86/relese
+5	Ejecutamos el AddOnRegDataGen.exe
+5.1		Llenamos los datos de instalacion y el addon
+5.2		Ruta del Add_on del paso 2
+5.3		ruta del instalador del paso 4.1
+
+6 juntar los archivos de instalacion como los de la aplicacion todo en una sola carpeta
+
+                     __
+                     .'  '.
+                 _.-'/  |  \
+    ,        _.-"  ,|  /  0 `-.
+    |\    .-"       `--""-.__.'=====================-,
+    \ '-'`        .___.--._)=========================|
+     \            .'      |                          |
+      |     /,_.-'        |        Add_On Factura    |
+    _/   _.'(             |           Electronica    |
+   /  ,-' \  \            |                          |
+   \  \    `-'            |                          |
+    `-'                   '--------------------------'
