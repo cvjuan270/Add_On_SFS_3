@@ -21,7 +21,6 @@ C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Ad
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Add_On_SFS_3.pdb
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Newtonsoft.Json.dll
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\RestSharp.dll
-C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Spire.Pdf.dll
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Microsoft.mshtml.dll
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Newtonsoft.Json.xml
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\RestSharp.xml
@@ -37,7 +36,6 @@ C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\obj\Debug\Ad
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\obj\Debug\Add_On_SFS_3.csproj.CopyComplete
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\obj\Debug\Add_On_SFS_3.exe
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\obj\Debug\Add_On_SFS_3.pdb
-C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Spire.License.dll
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Spire.License.xml
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\obj\Debug\Add_On_SFS_3.csprojAssemblyReference.cache
 C:\Users\JuanDiego\Downloads\Add_On_SFS_3\Add_On_SFS_3\Add_On_SFS_3\bin\Debug\Telerik.Reporting.dll
