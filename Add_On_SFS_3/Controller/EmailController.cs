@@ -153,7 +153,8 @@ namespace Add_On_SFS_3.Controller
                 client.EnableSsl = true;
                 client.Send(mail);
                 mail.Dispose();
-
+                Archivo.Clear();
+                client.Dispose();
                     respuestaSendcorreo[0] = "0";
                     respuestaSendcorreo[1] = "Mensaje enviado con exito";
              }
@@ -180,12 +181,12 @@ namespace Add_On_SFS_3.Controller
             var solicitud = new RestRequest(Method.POST);
             solicitud.AddHeader("Content-Type", "application/json");
             solicitud.AddParameter("application/json", oJson, ParameterType.RequestBody);
-            IRestResponse response = client.Execute(solicitud);
+            IRestResponse response =  client.Execute(solicitud);
          
         }
         public EmailController(SAPbouiCOM.Form oOrderForm)
         {
-           
+            
             Datos(oOrderForm);
             Rutas();
             dt = Conexion.Ejecutar_dt(string.Format("select E_Mail from OCRD where CardCode = '{0}'", oCardCode));
@@ -200,22 +201,34 @@ namespace Add_On_SFS_3.Controller
             }
 
 
-            if (string.IsNullOrEmpty(dt.Rows[0].ItemArray[0].ToString()))
+            if (formCorreo.ShowDialog() == DialogResult.OK)
             {
-                if (formCorreo.ShowDialog() == DialogResult.OK)
-                {
-                    SendEmail(formCorreo);
-                }
-                else
-                {
-                    respuestaSendcorreo[0] = "1";
-                    respuestaSendcorreo[1] = "Operacion envio de correo [Cancelada]";
-                }
+                SendEmail(formCorreo);
+                //formCorreo.Dispose();
             }
             else
             {
-                SendEmail(formCorreo);
+                respuestaSendcorreo[0] = "1";
+                respuestaSendcorreo[1] = "Operacion envio de correo [Cancelada]";
             }
+
+            //if (string.IsNullOrEmpty(dt.Rows[0].ItemArray[0].ToString()))
+            //{
+            //    if (formCorreo.ShowDialog() == DialogResult.OK)
+            //    {
+            //        SendEmail(formCorreo);
+            //    }
+            //    else
+            //    {
+            //        respuestaSendcorreo[0] = "1";
+            //        respuestaSendcorreo[1] = "Operacion envio de correo [Cancelada]";
+            //    }
+            //}
+            //else
+            //{
+            //    SendEmail(formCorreo);
+            //    formCorreo.Dispose();
+            //}
 
         }
 

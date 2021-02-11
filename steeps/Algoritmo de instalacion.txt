@@ -34,6 +34,7 @@
 5.1		Llenamos los datos de instalacion y el addon
 5.2		Ruta del Add_on del paso 2
 5.3		ruta del instalador del paso 4.1
+5.4		unistalling command line "\x"
 
 6 juntar los archivos de instalacion como los de la aplicacion todo en una sola carpeta
 
