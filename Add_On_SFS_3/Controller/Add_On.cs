@@ -1,5 +1,7 @@
-﻿using Add_On_SFS_3.View;
+﻿using Add_On_SFS_3.Model;
+using Add_On_SFS_3.View;
 using Microsoft.VisualBasic;
+using System.Data;
 using System.Windows.Forms;
 
 namespace Add_On_SFS_3.Controller
@@ -37,6 +39,7 @@ namespace Add_On_SFS_3.Controller
                     DibujaControles.BtnGenDE(oOrderForm);
                     DibujaControles.BtnImp(oOrderForm);
                     DibujaControles.BtnEnvCo(oOrderForm);
+
                 }
 
 
@@ -84,6 +87,20 @@ namespace Add_On_SFS_3.Controller
                                     }
                                     break;
 
+                                    /*guia de remision*/
+                                case "140":
+                                    GuiaController guia = new GuiaController(oOrderForm);
+                                    string[] rptagr = guia.respuestacdr;
+                                    if (rptagr[0] == "0")
+                                    {
+                                        SBO_Application.StatusBar.SetText(rptagr[1], SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Success);
+                                       // EnviaEmail();
+                                    }
+                                    else
+                                    {
+                                        SBO_Application.StatusBar.SetText(rptagr[1], SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Error);
+                                    }
+                                    break;
                             }
                         }
                         else
@@ -111,8 +128,35 @@ namespace Add_On_SFS_3.Controller
                         if (!string.IsNullOrEmpty(txtFolioNum.Value))
                         {
 
+                            //{
+                            //    ImprimeReportes();
+
+                            //}
+
+                            switch (oOrderForm.Type.ToString())
                             {
-                                ImprimeReportes();
+
+                                /*FATURA*/
+                                case "133":
+                                    break;
+
+                                //nota de crediro
+                                case "179":
+                                    break;
+                                //guia de remision
+                                case "140":
+
+                                    try
+                                    {
+                                        FormReporte formReporte = new FormReporte(oOrderForm);
+                                        formReporte.ShowDialog();
+                                    }
+                                    catch (System.Exception ex)
+                                    {
+
+                                        SBO_Application.StatusBar.SetText(ex.Message, SAPbouiCOM.BoMessageTime.bmt_Medium, SAPbouiCOM.BoStatusBarMessageType.smt_Error);
+                                    }
+                                    break;
 
                             }
                         }

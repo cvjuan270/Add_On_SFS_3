@@ -96,11 +96,22 @@ namespace Add_On_SFS_3.Controller
         }
         public static void Rutas()
         {
-            //RutaData = Settings.Default.DirectorioDATA + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".json";
-            RutaXml = Settings.Default.DirectorioFIRMA + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
-            RutaPdf = Settings.Default.DirectorioREPO + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".pdf";
-            RutaCdr = Settings.Default.DirectorioRPTA + "R" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".zip";
-            RutaXmlCdr = Settings.Default.DirectorioRPTA + "R" + "-" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
+            if (oDocType == "09")
+            {
+                //RutaData = Settings.Default.DirectorioDATA + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".json";
+                RutaXml = Settings.Default.DirectorioFIRMA_GR + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
+                RutaPdf = Settings.Default.DirectorioREPO_GR + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".pdf";
+                RutaCdr = Settings.Default.DirectorioRPTA_GR + "R" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".zip";
+                RutaXmlCdr = Settings.Default.DirectorioRPTA_GR + "R" + "-" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
+            }
+            else
+            {
+                //RutaData = Settings.Default.DirectorioDATA + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".json";
+                RutaXml = Settings.Default.DirectorioFIRMA + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
+                RutaPdf = Settings.Default.DirectorioREPO + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".pdf";
+                RutaCdr = Settings.Default.DirectorioRPTA + "R" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".zip";
+                RutaXmlCdr = Settings.Default.DirectorioRPTA + "R" + "-" + oRucEmi + "-" + oDocType + "-" + oSerie + "-" + oFolioNum + ".xml";
+            }
         }
 
         private static string CreaJsonNomAr()

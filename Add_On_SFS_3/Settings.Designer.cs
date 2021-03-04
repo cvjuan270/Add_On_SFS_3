@@ -12,7 +12,7 @@ namespace Add_On_SFS_3 {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.8.1.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -337,6 +337,114 @@ namespace Add_On_SFS_3 {
             }
             set {
                 this["RutaLOG"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\SFS_1.3.4.2_GR\\sunat_archivos\\sfs\\DATA\\")]
+        public string DirectorioDATA_GR {
+            get {
+                return ((string)(this["DirectorioDATA_GR"]));
+            }
+            set {
+                this["DirectorioDATA_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\SFS_1.3.4.2_GR\\sunat_archivos\\sfs\\FIRMA\\")]
+        public string DirectorioFIRMA_GR {
+            get {
+                return ((string)(this["DirectorioFIRMA_GR"]));
+            }
+            set {
+                this["DirectorioFIRMA_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\SFS_1.3.4.2_GR\\sunat_archivos\\sfs\\REPO\\")]
+        public string DirectorioREPO_GR {
+            get {
+                return ((string)(this["DirectorioREPO_GR"]));
+            }
+            set {
+                this["DirectorioREPO_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("D:\\SFS_1.3.4.2_GR\\sunat_archivos\\sfs\\RPTA\\")]
+        public string DirectorioRPTA_GR {
+            get {
+                return ((string)(this["DirectorioRPTA_GR"]));
+            }
+            set {
+                this["DirectorioRPTA_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:9001/api/GenerarComprobante.htm")]
+        public string httpFirma_GR {
+            get {
+                return ((string)(this["httpFirma_GR"]));
+            }
+            set {
+                this["httpFirma_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:9001/api/enviarXML.htm")]
+        public string httpEnvio_GR {
+            get {
+                return ((string)(this["httpEnvio_GR"]));
+            }
+            set {
+                this["httpEnvio_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:9001/")]
+        public string httpBandeja_GR {
+            get {
+                return ((string)(this["httpBandeja_GR"]));
+            }
+            set {
+                this["httpBandeja_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:9001/api/ActualizarPantalla.htm")]
+        public string httpActualizar_GR {
+            get {
+                return ((string)(this["httpActualizar_GR"]));
+            }
+            set {
+                this["httpActualizar_GR"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost:9001/api/MostrarXml.htm")]
+        public string httpPdf_GR {
+            get {
+                return ((string)(this["httpPdf_GR"]));
+            }
+            set {
+                this["httpPdf_GR"] = value;
             }
         }
     }

@@ -176,5 +176,32 @@
     <Setting Name="RutaLOG" Type="System.String" Scope="User">
       <Value Profile="(Default)">D:\SFS_v1.3.2\sunat_archivos\sfs\LOG\</Value>
     </Setting>
+    <Setting Name="DirectorioDATA_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\SFS_1.3.4.2_GR\sunat_archivos\sfs\DATA\</Value>
+    </Setting>
+    <Setting Name="DirectorioFIRMA_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\SFS_1.3.4.2_GR\sunat_archivos\sfs\FIRMA\</Value>
+    </Setting>
+    <Setting Name="DirectorioREPO_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\SFS_1.3.4.2_GR\sunat_archivos\sfs\REPO\</Value>
+    </Setting>
+    <Setting Name="DirectorioRPTA_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">D:\SFS_1.3.4.2_GR\sunat_archivos\sfs\RPTA\</Value>
+    </Setting>
+    <Setting Name="httpFirma_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:9001/api/GenerarComprobante.htm</Value>
+    </Setting>
+    <Setting Name="httpEnvio_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:9001/api/enviarXML.htm</Value>
+    </Setting>
+    <Setting Name="httpBandeja_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:9001/</Value>
+    </Setting>
+    <Setting Name="httpActualizar_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:9001/api/ActualizarPantalla.htm</Value>
+    </Setting>
+    <Setting Name="httpPdf_GR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://localhost:9001/api/MostrarXml.htm</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

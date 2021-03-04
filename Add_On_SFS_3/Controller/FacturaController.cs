@@ -18,12 +18,13 @@ namespace Add_On_SFS_3.Controller
 {
     public class FacturaController
     {
+        #region VAriables de documento
         public static string PATH = Settings.Default.RutaLOG;
         Log oLog = new Log(PATH);
 
         public string[] respuestacdr = new string[2];
 
-        #region VAriables de documento
+      
         private static string oRucEmi;
         private static string oRazSocEmi;
         private static string oDireccEmi;
@@ -37,14 +38,13 @@ namespace Add_On_SFS_3.Controller
         private static string oSerie;
         private static string oFolioNum;
 
-        #endregion
-
         #region rutas
         private static string RutaData;
         private static string RutaXml;
         private static string RutaPdf;
         private static string RutaCdr;
         private static string RutaXmlCdr;
+        #endregion
         #endregion
 
         public static  RootFT GetDocumentoElectronico(int DocEntry)
